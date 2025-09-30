@@ -70,7 +70,8 @@ export const useIdeaStore = create<IdeaState>((set, get) => ({
       return docRef.id;
     } catch (error: any) {
       set({ error: error.message, isLoading: false });
-      // throw error;
+      alert('Failed to add idea');
+      return '';
     }
   },
 
@@ -85,7 +86,7 @@ export const useIdeaStore = create<IdeaState>((set, get) => ({
       });
     } catch (error: any) {
       set({ error: error.message });
-      // throw error;
+      alert('Failed to update idea');
     }
   },
 
@@ -99,7 +100,7 @@ export const useIdeaStore = create<IdeaState>((set, get) => ({
       }));
     } catch (error: any) {
       set({ error: error.message });
-      // throw error;
+      alert('Failed to delete idea');
     }
   },
 
