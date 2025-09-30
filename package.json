@@ -1,0 +1,19 @@
+{
+  "name": "greenpath",
+  "version": "1.0.0",
+  "description": "Sustainable Startup Navigator",
+  "scripts": {
+    "dev": "concurrently \"yarn run dev:backend\" \"yarn run dev:frontend\"",
+    "dev:frontend": "cd frontend && yarn start",
+    "dev:backend": "cd backend/functions && firebase emulators:start",
+    "build": "cd backend/functions && yarn run build && cd ../../frontend && yarn run build",
+    "deploy:rules": "firebase deploy --only firestore:rules,storage",
+    "deploy:functions": "cd backend/functions && yarn run deploy",
+    "deploy:frontend": "cd frontend && yarn run build && firebase deploy --only hosting",
+    "deploy:all": "yarn run deploy:rules && yarn run deploy:functions && yarn run deploy:frontend",
+    "setup": "cd frontend && yarn add && cd ../backend/functions && yarn add"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

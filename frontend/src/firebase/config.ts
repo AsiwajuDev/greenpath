@@ -2,6 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { connectFirestoreEmulator, getFirestore } from 'firebase/firestore';
 import { connectAuthEmulator, getAuth } from 'firebase/auth';
 import { connectFunctionsEmulator, getFunctions } from 'firebase/functions';
+import { connectStorageEmulator, getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -19,12 +20,19 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
 export const functions = getFunctions(app);
+export const storage = getStorage(app);
 
 // Connect to emulators in development
-if (process.env.NODE_ENV === 'development') {
-  connectFirestoreEmulator(db, 'localhost', 8080);
-  connectAuthEmulator(auth, 'http://localhost:9099');
-  connectFunctionsEmulator(functions, 'localhost', 5001);
+if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test') {
+  try {
+    connectFirestoreEmulator(db, 'localhost', 8080);
+    connectAuthEmulator(auth, 'http://localhost:9099');
+    connectFunctionsEmulator(functions, 'localhost', 5001);
+    connectStorageEmulator(storage, 'localhost', 9199);
+    console.log('Connected to Firebase Emulators');
+  } catch (error) {
+    console.warn('Could not connect to all emulators:', error);
+  }
 }
 
 export default app;

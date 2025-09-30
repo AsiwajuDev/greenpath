@@ -1,5 +1,5 @@
-import React from "react";
-import { useAuthStore } from "../hooks/authStore";
+import React from 'react';
+import { useAuthStore } from '../stores/authStore';
 
 export const Header: React.FC = () => {
   const { user, logout } = useAuthStore();

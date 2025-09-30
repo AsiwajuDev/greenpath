@@ -5,20 +5,32 @@ import {
   Route,
   Navigate,
 } from 'react-router-dom';
-import { useAuthStore } from './hooks/authStore';
 import { Header } from './component/Header';
 import { Login } from './component/Login';
 import { Dashboard } from './component/Dashboard';
 import { IdeaValidator } from './component/IdeaValidator';
+import { useAuthStore } from './stores/authStore';
 
 function App() {
-  const { isAuthenticated, checkAuth } = useAuthStore();
+  const { isAuthenticated, isLoading, initializeAuth } = useAuthStore();
 
   console.log(isAuthenticated);
 
   useEffect(() => {
-    checkAuth();
-  }, [checkAuth]);
+    const unsubscribe = initializeAuth();
+    return unsubscribe;
+  }, [initializeAuth]);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-600 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading GreenPath...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <Router>

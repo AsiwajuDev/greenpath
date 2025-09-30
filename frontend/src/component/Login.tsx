@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { useAuthStore } from "../hooks/authStore";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuthStore } from '../stores/authStore';
 
 export const Login: React.FC = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-    displayName: "",
+    email: '',
+    password: '',
+    displayName: '',
   });
   const { login, signup, isLoading } = useAuthStore();
   const navigate = useNavigate();
@@ -21,11 +21,11 @@ export const Login: React.FC = () => {
       await signup(formData.email, formData.password, formData.displayName);
     }
 
-    navigate("/");
+    navigate('/');
   };
 
-  const pageTitle = isLogin ? "Sign in to GreenPath" : "Create your account";
-  const toggleButtonText = !isLogin ? "Sign up" : "Sign in";
+  const pageTitle = isLogin ? 'Sign in to GreenPath' : 'Create your account';
+  const toggleButtonText = !isLogin ? 'Sign up' : 'Sign in';
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -38,13 +38,13 @@ export const Login: React.FC = () => {
             {pageTitle}
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            {isLogin ? "Don't have an account? " : "Already have an account? "}
+            {isLogin ? "Don't have an account? " : 'Already have an account? '}
             <button
               type="button"
               className="font-medium text-green-600 hover:text-green-500"
               onClick={() => setIsLogin(!isLogin)}
             >
-              {isLogin ? "Sign up" : "Sign in"}
+              {isLogin ? 'Sign up' : 'Sign in'}
             </button>
           </p>
         </div>
