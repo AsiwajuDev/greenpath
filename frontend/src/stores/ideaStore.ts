@@ -70,7 +70,7 @@ export const useIdeaStore = create<IdeaState>((set, get) => ({
       return docRef.id;
     } catch (error: any) {
       set({ error: error.message, isLoading: false });
-      throw error;
+      // throw error;
     }
   },
 
@@ -85,7 +85,7 @@ export const useIdeaStore = create<IdeaState>((set, get) => ({
       });
     } catch (error: any) {
       set({ error: error.message });
-      throw error;
+      // throw error;
     }
   },
 
@@ -99,7 +99,7 @@ export const useIdeaStore = create<IdeaState>((set, get) => ({
       }));
     } catch (error: any) {
       set({ error: error.message });
-      throw error;
+      // throw error;
     }
   },
 

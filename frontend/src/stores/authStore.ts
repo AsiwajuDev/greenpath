@@ -67,7 +67,6 @@ export const useAuthStore = create<AuthState>((set, get) => ({
         authError: error.message || 'Login failed',
         isLoading: false,
       });
-      throw error;
     }
   },
 
@@ -98,7 +97,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
         authError: error.message || 'Signup failed',
         isLoading: false,
       });
-      throw error;
+      //   throw error;
     }
   },
 
@@ -108,7 +107,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
       set({ user: null, isAuthenticated: false, authError: null });
     } catch (error: any) {
       set({ authError: error.message || 'Logout failed' });
-      throw error;
+      //   throw error;
     }
   },
 
