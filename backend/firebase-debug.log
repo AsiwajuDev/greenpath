@@ -1,0 +1,554 @@
+[debug] [2025-09-26T20:05:45.147Z] ----------------------------------------------------------------------
+[debug] [2025-09-26T20:05:45.149Z] Command:       /Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/bin/node /Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/bin/firebase emulators:start
+[debug] [2025-09-26T20:05:45.150Z] CLI Version:   14.17.0
+[debug] [2025-09-26T20:05:45.150Z] Platform:      darwin
+[debug] [2025-09-26T20:05:45.150Z] Node Version:  v23.8.0
+[debug] [2025-09-26T20:05:45.150Z] Time:          Fri Sep 26 2025 22:05:45 GMT+0200 (Central European Summer Time)
+[debug] [2025-09-26T20:05:45.150Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-26T20:05:45.243Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-26T20:05:45.243Z] > authorizing via signed-in user (olanrewajuranda@gmail.com)
+[debug] [2025-09-26T20:05:45.375Z] openjdk version "17.0.16" 2025-07-15
+
+[debug] [2025-09-26T20:05:45.376Z] OpenJDK Runtime Environment Homebrew (build 17.0.16+0)
+OpenJDK 64-Bit Server VM Homebrew (build 17.0.16+0, mixed mode, sharing)
+
+[debug] [2025-09-26T20:05:45.378Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: functions, firestore, hosting, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, hosting, extensions"}}
+[debug] [2025-09-26T20:05:45.379Z] Checked if tokens are valid: false, expires at: 1758916865171
+[debug] [2025-09-26T20:05:45.380Z] Checked if tokens are valid: false, expires at: 1758916865171
+[debug] [2025-09-26T20:05:45.380Z] > refreshing access token with scopes: []
+[debug] [2025-09-26T20:05:45.380Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-26T20:05:45.381Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-26T20:05:45.547Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-26T20:05:45.547Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-26T20:05:45.572Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/greenpath-dev-bc095/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-09-26T20:05:45.572Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/greenpath-dev-bc095/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/greenpath-dev-bc095
+[debug] [2025-09-26T20:05:46.515Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/greenpath-dev-bc095/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-09-26T20:05:46.515Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/greenpath-dev-bc095/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-09-26T20:05:46.521Z] Checked if tokens are valid: true, expires at: 1758920744547
+[debug] [2025-09-26T20:05:46.522Z] Checked if tokens are valid: true, expires at: 1758920744547
+[debug] [2025-09-26T20:05:46.522Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/greenpath-dev-bc095 [none]
+[debug] [2025-09-26T20:05:46.842Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/greenpath-dev-bc095 200
+[debug] [2025-09-26T20:05:46.842Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/greenpath-dev-bc095 {"projectNumber":"1074138089445","projectId":"greenpath-dev-bc095","lifecycleState":"ACTIVE","name":"greenpath-dev","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-09-26T19:09:28.329915Z"}
+[debug] [2025-09-26T20:05:47.331Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-26T20:05:47.331Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-26T20:05:47.331Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-26T20:05:47.331Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-26T20:05:47.331Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-09-26T20:05:47.333Z] Emulator locator file path: /var/folders/s1/rf1gn6g575bc9hk6k0pfgnfm0000gn/T/hub-greenpath-dev-bc095.json
+[debug] [2025-09-26T20:05:47.333Z] [hub] writing locator at /var/folders/s1/rf1gn6g575bc9hk6k0pfgnfm0000gn/T/hub-greenpath-dev-bc095.json
+[debug] [2025-09-26T20:05:47.335Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-09-26T20:05:47.572Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-26T20:05:47.572Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-26T20:05:47.572Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-26T20:05:47.572Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, database, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, database, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-09-26T20:05:47.577Z] defaultcredentials: writing to file /Users/kazeemasiwaju-bello/.config/firebase/olanrewajuranda_gmail_com_application_default_credentials.json
+[debug] [2025-09-26T20:05:47.578Z] Setting GAC to /Users/kazeemasiwaju-bello/.config/firebase/olanrewajuranda_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/kazeemasiwaju-bello/.config/firebase/olanrewajuranda_gmail_com_application_default_credentials.json"}}
+[debug] [2025-09-26T20:05:47.578Z] Checked if tokens are valid: true, expires at: 1758920744547
+[debug] [2025-09-26T20:05:47.578Z] Checked if tokens are valid: true, expires at: 1758920744547
+[debug] [2025-09-26T20:05:47.578Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/greenpath-dev-bc095/adminSdkConfig [none]
+[debug] [2025-09-26T20:05:47.943Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/greenpath-dev-bc095/adminSdkConfig 200
+[debug] [2025-09-26T20:05:47.943Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/greenpath-dev-bc095/adminSdkConfig {"projectId":"greenpath-dev-bc095","storageBucket":"greenpath-dev-bc095.firebasestorage.app"}
+[info] i  firestore: downloading cloud-firestore-emulator-v1.19.8.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.19.8.jar..."}}
+[debug] [2025-09-26T20:05:47.957Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar 
+[debug] [2025-09-26T20:05:48.212Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar 200
+[debug] [2025-09-26T20:05:48.212Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar [stream]
+[debug] [2025-09-26T20:05:58.002Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-09-26T20:05:58.002Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-09-26T20:05:58.002Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/kazeemasiwaju-bello/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","greenpath-dev-bc095","--rules","/Users/kazeemasiwaju-bello/Documents/Workspace/greenpath/backend/firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/kazeemasiwaju-bello/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"greenpath-dev-bc095\",\"--rules\",\"/Users/kazeemasiwaju-bello/Documents/Workspace/greenpath/backend/firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2025-09-26T20:05:58.647Z] Sep 26, 2025 10:05:58 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 26, 2025 10:05:58 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2025-09-26T20:05:58.661Z] API endpoint: http://127.0.0.1:8080
+ {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://127.0.0.1:8080\n"}}
+[debug] [2025-09-26T20:05:58.661Z] If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2025-09-26T20:05:58.816Z] Checked if tokens are valid: true, expires at: 1758920744547
+[debug] [2025-09-26T20:05:58.816Z] Checked if tokens are valid: true, expires at: 1758920744547
+[debug] [2025-09-26T20:05:58.817Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/greenpath-dev-bc095/sites 
+[debug] [2025-09-26T20:05:59.896Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/greenpath-dev-bc095/sites 200
+[debug] [2025-09-26T20:05:59.896Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/greenpath-dev-bc095/sites {"sites":[{"name":"projects/greenpath-dev-bc095/sites/greenpath-dev-bc095","defaultUrl":"https://greenpath-dev-bc095.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-09-26T20:05:59.896Z] Checked if tokens are valid: true, expires at: 1758920744547
+[debug] [2025-09-26T20:05:59.896Z] Checked if tokens are valid: true, expires at: 1758920744547
+[debug] [2025-09-26T20:05:59.896Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/greenpath-dev-bc095/webApps/-/config [none]
+[debug] [2025-09-26T20:06:00.539Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/greenpath-dev-bc095/webApps/-/config 200
+[debug] [2025-09-26T20:06:00.539Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/greenpath-dev-bc095/webApps/-/config {"projectId":"greenpath-dev-bc095","storageBucket":"greenpath-dev-bc095.firebasestorage.app","apiKey":"AIzaSyAKURle9jRKgii-lpxQE-Z63o9SccGUwy4","authDomain":"greenpath-dev-bc095.firebaseapp.com","messagingSenderId":"1074138089445"}
+[debug] [2025-09-26T20:06:00.547Z] Checked if tokens are valid: true, expires at: 1758920744547
+[debug] [2025-09-26T20:06:00.547Z] Checked if tokens are valid: true, expires at: 1758920744547
+[debug] [2025-09-26T20:06:00.547Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/greenpath-dev-bc095 [none]
+[debug] [2025-09-26T20:06:00.846Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/greenpath-dev-bc095 200
+[debug] [2025-09-26T20:06:00.846Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/greenpath-dev-bc095 {"projectId":"greenpath-dev-bc095","projectNumber":"1074138089445","displayName":"greenpath-dev","name":"projects/greenpath-dev-bc095","resources":{"hostingSite":"greenpath-dev-bc095"},"state":"ACTIVE","etag":"1_4f62145e-8329-4419-8b95-f555f57a3358"}
+[info] i  hosting[greenpath-dev-bc095]: Serving hosting files from: shared {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mshared\u001b[22m"}}
+[info] ✔  hosting[greenpath-dev-bc095]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[info] i  ui: downloading ui-v1.15.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.15.0.zip..."}}
+[debug] [2025-09-26T20:06:00.899Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 
+[debug] [2025-09-26T20:06:00.929Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 200
+[debug] [2025-09-26T20:06:00.929Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip [stream]
+[debug] [2025-09-26T20:06:01.450Z] Data is 3538469
+[debug] [2025-09-26T20:06:01.450Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-09-26T20:06:01.450Z] [unzip] Processing entry: client/
+[debug] [2025-09-26T20:06:01.450Z] [unzip] mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/
+[debug] [2025-09-26T20:06:01.451Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2025-09-26T20:06:01.451Z] [unzip] Processing entry: client/favicon-16x16.png
+[debug] [2025-09-26T20:06:01.451Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-09-26T20:06:01.451Z] [unzip] Writing file: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/favicon-16x16.png
+[debug] [2025-09-26T20:06:01.451Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2025-09-26T20:06:01.451Z] [unzip] Processing entry: client/safari-pinned-tab.svg
+[debug] [2025-09-26T20:06:01.451Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-09-26T20:06:01.452Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/safari-pinned-tab.svg
+[debug] [2025-09-26T20:06:01.454Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2025-09-26T20:06:01.454Z] [unzip] Processing entry: client/favicon.ico
+[debug] [2025-09-26T20:06:01.454Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-09-26T20:06:01.454Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/favicon.ico
+[debug] [2025-09-26T20:06:01.455Z] [unzip] Entry: client/index.html (compressed_size=1364 bytes, uncompressed_size=3071 bytes)
+[debug] [2025-09-26T20:06:01.455Z] [unzip] Processing entry: client/index.html
+[debug] [2025-09-26T20:06:01.455Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-09-26T20:06:01.455Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/index.html
+[debug] [2025-09-26T20:06:01.455Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2025-09-26T20:06:01.455Z] [unzip] Processing entry: client/android-chrome-192x192.png
+[debug] [2025-09-26T20:06:01.455Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-09-26T20:06:01.455Z] [unzip] Writing file: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/android-chrome-192x192.png
+[debug] [2025-09-26T20:06:01.455Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2025-09-26T20:06:01.455Z] [unzip] Processing entry: client/apple-touch-icon.png
+[debug] [2025-09-26T20:06:01.455Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-09-26T20:06:01.455Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/apple-touch-icon.png
+[debug] [2025-09-26T20:06:01.456Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2025-09-26T20:06:01.456Z] [unzip] Processing entry: client/android-chrome-512x512.png
+[debug] [2025-09-26T20:06:01.456Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-09-26T20:06:01.456Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/android-chrome-512x512.png
+[debug] [2025-09-26T20:06:01.456Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2025-09-26T20:06:01.456Z] [unzip] Processing entry: client/manifest.json
+[debug] [2025-09-26T20:06:01.456Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-09-26T20:06:01.456Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/manifest.json
+[debug] [2025-09-26T20:06:01.457Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2025-09-26T20:06:01.457Z] [unzip] Processing entry: client/robots.txt
+[debug] [2025-09-26T20:06:01.457Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-09-26T20:06:01.457Z] [unzip] Writing file: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/robots.txt
+[debug] [2025-09-26T20:06:01.457Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2025-09-26T20:06:01.457Z] [unzip] Processing entry: client/mstile-150x150.png
+[debug] [2025-09-26T20:06:01.457Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-09-26T20:06:01.457Z] [unzip] Writing file: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/mstile-150x150.png
+[debug] [2025-09-26T20:06:01.457Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-09-26T20:06:01.457Z] [unzip] Processing entry: client/assets/
+[debug] [2025-09-26T20:06:01.457Z] [unzip] mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/
+[debug] [2025-09-26T20:06:01.457Z] [unzip] Entry: client/assets/index-BX-A56oj.js (compressed_size=582089 bytes, uncompressed_size=2092775 bytes)
+[debug] [2025-09-26T20:06:01.458Z] [unzip] Processing entry: client/assets/index-BX-A56oj.js
+[debug] [2025-09-26T20:06:01.458Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets
+[debug] [2025-09-26T20:06:01.458Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/index-BX-A56oj.js
+[debug] [2025-09-26T20:06:01.464Z] [unzip] Entry: client/assets/index-CjB9C900.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2025-09-26T20:06:01.465Z] [unzip] Processing entry: client/assets/index-CjB9C900.css
+[debug] [2025-09-26T20:06:01.465Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets
+[debug] [2025-09-26T20:06:01.465Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/index-CjB9C900.css
+[debug] [2025-09-26T20:06:01.466Z] [unzip] Entry: client/assets/index-BX-A56oj.js.map (compressed_size=2362482 bytes, uncompressed_size=10036679 bytes)
+[debug] [2025-09-26T20:06:01.466Z] [unzip] Processing entry: client/assets/index-BX-A56oj.js.map
+[debug] [2025-09-26T20:06:01.466Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets
+[debug] [2025-09-26T20:06:01.466Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/index-BX-A56oj.js.map
+[debug] [2025-09-26T20:06:01.503Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-09-26T20:06:01.503Z] [unzip] Processing entry: client/assets/extensions/
+[debug] [2025-09-26T20:06:01.503Z] [unzip] mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/extensions/
+[debug] [2025-09-26T20:06:01.503Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2025-09-26T20:06:01.503Z] [unzip] Processing entry: client/assets/extensions/default-extension.png
+[debug] [2025-09-26T20:06:01.503Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/extensions
+[debug] [2025-09-26T20:06:01.503Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/extensions/default-extension.png
+[debug] [2025-09-26T20:06:01.503Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-09-26T20:06:01.503Z] [unzip] Processing entry: client/assets/img/
+[debug] [2025-09-26T20:06:01.503Z] [unzip] mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/img/
+[debug] [2025-09-26T20:06:01.504Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2025-09-26T20:06:01.504Z] [unzip] Processing entry: client/assets/img/database.png
+[debug] [2025-09-26T20:06:01.504Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/img
+[debug] [2025-09-26T20:06:01.504Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/img/database.png
+[debug] [2025-09-26T20:06:01.504Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-09-26T20:06:01.504Z] [unzip] Processing entry: client/assets/provider-icons/
+[debug] [2025-09-26T20:06:01.504Z] [unzip] mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/
+[debug] [2025-09-26T20:06:01.504Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2025-09-26T20:06:01.504Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_saml.svg
+[debug] [2025-09-26T20:06:01.504Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.504Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_saml.svg
+[debug] [2025-09-26T20:06:01.504Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2025-09-26T20:06:01.504Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_phone.svg
+[debug] [2025-09-26T20:06:01.504Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.504Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_phone.svg
+[debug] [2025-09-26T20:06:01.505Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2025-09-26T20:06:01.505Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_facebook.svg
+[debug] [2025-09-26T20:06:01.505Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.505Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_facebook.svg
+[debug] [2025-09-26T20:06:01.505Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2025-09-26T20:06:01.505Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_game_center.svg
+[debug] [2025-09-26T20:06:01.505Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.505Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_game_center.svg
+[debug] [2025-09-26T20:06:01.505Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2025-09-26T20:06:01.505Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_apple.svg
+[debug] [2025-09-26T20:06:01.505Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.505Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_apple.svg
+[debug] [2025-09-26T20:06:01.505Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2025-09-26T20:06:01.505Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_github.svg
+[debug] [2025-09-26T20:06:01.505Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.505Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_github.svg
+[debug] [2025-09-26T20:06:01.506Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2025-09-26T20:06:01.506Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_mslive.svg
+[debug] [2025-09-26T20:06:01.506Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.506Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_mslive.svg
+[debug] [2025-09-26T20:06:01.506Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2025-09-26T20:06:01.506Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_yahoo.svg
+[debug] [2025-09-26T20:06:01.506Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.506Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_yahoo.svg
+[debug] [2025-09-26T20:06:01.506Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2025-09-26T20:06:01.506Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_twitter.svg
+[debug] [2025-09-26T20:06:01.506Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.506Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_twitter.svg
+[debug] [2025-09-26T20:06:01.506Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2025-09-26T20:06:01.506Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_play_games.svg
+[debug] [2025-09-26T20:06:01.506Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.506Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_play_games.svg
+[debug] [2025-09-26T20:06:01.507Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2025-09-26T20:06:01.507Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_email.svg
+[debug] [2025-09-26T20:06:01.507Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.507Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_email.svg
+[debug] [2025-09-26T20:06:01.507Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2025-09-26T20:06:01.507Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_google.svg
+[debug] [2025-09-26T20:06:01.507Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.507Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_google.svg
+[debug] [2025-09-26T20:06:01.507Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2025-09-26T20:06:01.507Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_oidc.svg
+[debug] [2025-09-26T20:06:01.507Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-09-26T20:06:01.508Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_oidc.svg
+[debug] [2025-09-26T20:06:01.508Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2025-09-26T20:06:01.508Z] [unzip] Processing entry: client/browserconfig.xml
+[debug] [2025-09-26T20:06:01.508Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-09-26T20:06:01.508Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/browserconfig.xml
+[debug] [2025-09-26T20:06:01.508Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2025-09-26T20:06:01.508Z] [unzip] Processing entry: client/favicon-32x32.png
+[debug] [2025-09-26T20:06:01.508Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-09-26T20:06:01.508Z] [unzip] Writing file: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/client/favicon-32x32.png
+[debug] [2025-09-26T20:06:01.508Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-09-26T20:06:01.508Z] [unzip] Processing entry: server/
+[debug] [2025-09-26T20:06:01.508Z] [unzip] mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/server/
+[debug] [2025-09-26T20:06:01.508Z] [unzip] Entry: server/server.mjs.map (compressed_size=217845 bytes, uncompressed_size=944978 bytes)
+[debug] [2025-09-26T20:06:01.508Z] [unzip] Processing entry: server/server.mjs.map
+[debug] [2025-09-26T20:06:01.508Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/server
+[debug] [2025-09-26T20:06:01.508Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/server/server.mjs.map
+[debug] [2025-09-26T20:06:01.511Z] [unzip] Entry: server/server.mjs (compressed_size=276407 bytes, uncompressed_size=933701 bytes)
+[debug] [2025-09-26T20:06:01.511Z] [unzip] Processing entry: server/server.mjs
+[debug] [2025-09-26T20:06:01.511Z] [unzip] else mkdir: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/server
+[debug] [2025-09-26T20:06:01.511Z] [unzip] deflating: /Users/kazeemasiwaju-bello/.cache/firebase/emulators/ui-v1.15.0/server/server.mjs
+[debug] [2025-09-26T20:06:01.515Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "/Users/kazeemasiwaju-bello/Documents/Workspace/greenpath/backend/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/kazeemasiwaju-bello/Documents/Workspace/greenpath/backend/functions\" for Cloud Functions..."}}
+[debug] [2025-09-26T20:06:01.520Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2025-09-26T20:06:02.076Z] > [functions] package.json contents: {
+  "name": "greenpath-functions",
+  "description": "GreenPath backend functions",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "firebase emulators:start --only functions,firestore",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "openai": "^4.20.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^5.7.3"
+  },
+  "private": true
+}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:
+
+ functions/lib/index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:\n\n functions/lib/index.js does not exist, can't deploy Cloud Functions"}}
+[debug] [2025-09-26T20:06:02.079Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator   │ Host:Port      │ View in Emulator UI              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Functions  │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore  │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Hosting    │ 127.0.0.1:5000 │ n/a                              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-09-27T17:00:26.599Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[debug] [2025-09-27T17:00:26.776Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.779Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.786Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.789Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.791Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.796Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.798Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.798Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.799Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.800Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.800Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.800Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.801Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.801Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.802Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.802Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.802Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-27T17:00:26.802Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:971:11)
+    at Socket._write (node:net:983:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/Users/kazeemasiwaju-bello/.nvm/versions/node/v23.8.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
